@@ -40,77 +40,57 @@ std::string input(std::string prompt) {
 
 int main(int argc, char const* argv[]) {
 
-    int a;
-    int b;
 
 
-//    cin >> operation; ... ask why this does not work
-    while (true)
+
+    string operation = input("operation: ");
+    while (!operation.empty())
     {
-        cout << "operation: ";
-        string operation;
-        getline(cin, operation);
 
-        if (operation.empty())
-        {break;
-        }
+
+
 
         if (operation == "add")
         {
-            cout << "left operand: ";
-            string a;
-            getline(cin, a);
-            cout << "right operand: ";
-            string b;
-            getline(cin, b);
-            cout << a+b << endl;}
+            int left = stoi(input("left operand: "));
+            int right = stoi(input("right operand: "));
+            cout << left+right << endl;
+        }
 
         else if (operation == "subtract")
         {
-            cout << "left operand: ";
-            string a;
-            getline(cin, a);
-            cout << "right operand: ";
-            string b;
-            getline(cin, b);
-            cout << a-b << endl;
+            int left = stoi(input("left operand: "));
+            int right = stoi(input("right operand: "));
+            cout << left-right << endl;
         }
 
         else if (operation == "multiply")
         {
-            cout << "left operand: ";
-            string a;
-            getline(cin, a);
-            cout << "right operand: ";
-            string b;
-            getline(cin, b);
-            cout << a*b << endl;
+            int left = stoi(input("left operand: "));
+            int right = stoi(input("right operand: "));
+            cout << left*right << endl;
         }
 
         else if (operation == "divide")
         {
-            cout << "left operand: ";
-            string a;
-            getline(cin, a);
-            cout << "right operand: ";
-            string b;
-            getline(cin, b);
-            cout << a/b << endl;
+            int left = stoi(input("left operand: "));
+            int right = stoi(input("right operand: "));
+            cout << left/right << endl;
         }
-//left this original (below)... it says that it reads in a new line character on the next operation so it automatically breaks????
+
         else if (operation == "mod")
         {
-            cout << "left operand: ";
-            cin >> a;
-            cout << "right operand: ";
-            cin >> b;
-            cout << a%b << endl;
+            int left = stoi(input("left operand: "));
+            int right = stoi(input("right operand: "));
+            cout << left%right << endl;
         }
 
         else
         {
             cout << operation << " isn't a valid operation" << endl;
         }
+        operation = input("operation: ");
+
 
     }
             return 0;
