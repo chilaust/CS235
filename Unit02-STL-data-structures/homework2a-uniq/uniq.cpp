@@ -25,7 +25,7 @@ void read_lines(std::istream &input) {
         }
         if (indicator != "yes") {
             lines.push_back(line);
-            std::cout << line  << std::endl;
+            std::cout << line << std::endl;
         }
         indicator = "no";
     }
@@ -37,19 +37,15 @@ int main(int argc, char const* argv[]) {
     std::string input_file;
 
     if (argc > 1) {
-    input_file = argv[1];
+        input_file = argv[1];
+        std::ifstream infile(input_file);
+        read_lines(infile);
+        if (infile.is_open()) {
+            infile.close();
+        }
     }
-    std::ifstream infile(input_file);
-
-    if (!infile.is_open()) {
-        std::cerr << "ERROR: can't open " << input_file << std::endl;
-        exit(1);
-    }
-
-    read_lines(input_file.empty() ? std::cin : infile);
-
-    if (infile.is_open()) {
-        infile.close();
+    else {
+        read_lines(std::cin);
     }
 
     return 0;
