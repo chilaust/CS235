@@ -20,11 +20,17 @@ public:
     }
 
     bool insert(T item) {
-        if (contains(item)) {
+        auto it = std::find(set.begin(),set.end(),item);
+        if (it != set.end()){
             return false;
         }
         set.push_back(item);
         return true;
+//        if (contains(item)) {
+//            return false;
+//        }
+//        set.push_back(item);
+//        return true;
 
         // return true if item is inserted and false if item is already in the set
     }
