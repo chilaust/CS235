@@ -1,13 +1,12 @@
-#pragma once
 #include <vector>
 #include <algorithm>
 
-
-
 template<class T>
 class VectorSet {
+
 private:
     std::vector<T> set;
+
 public:
     bool contains(T item) const {
         for (const auto& obj : set) {
@@ -27,16 +26,16 @@ public:
         set.push_back(item);
         return true;
 
-        // return true if item is inserted and false if item is already in the
-        // set
+        // return true if item is inserted and false if item is already in the set
     }
 
     bool remove(T item) {
-        if (contains(item)) {
+        auto it = std::find(set.begin(),set.end(),item);
+        if (it == set.end()){
             return false;
         }
-        int location = std::find(set.begin(), set.end(), item);
-        set.erase(location);
+        set.erase(it);
+        return true;
         // return true if item is removed and false if item wasn't in the set
     }
 
