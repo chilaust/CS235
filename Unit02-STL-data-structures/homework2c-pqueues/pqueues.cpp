@@ -37,7 +37,7 @@ int main(int argc, char const* argv[]) {
     std::priority_queue<std::string, std::vector<std::string>, std::less<std::string> > people;
 
 
-    // start a loop so that it asks What do you want to do? (no endl)
+    // start a loop so that it asks What do you want to do?
 
     while (true){
         string operation = input("What do you want to do? ");
