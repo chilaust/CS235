@@ -13,7 +13,7 @@ using std::stringstream;
 int sum_line(string line)
 {
     stringstream line_stream(line);
-    int total;
+    int total;  // leave off "= 0", what happens?
     int num;
     while (line_stream >> num)
     {
