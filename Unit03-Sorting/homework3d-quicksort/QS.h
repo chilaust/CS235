@@ -33,6 +33,10 @@ int medianOfThree(std::vector<T>& array, int left, int right) {
 template<class T>
 int partition(std::vector<T>& array, int left, int right) {
     // implement partition here
+    medianOfThree(array,left,right);
+    swap(array[left],array[right]);
+    int up = left+ 1;
+
 }
 
 template<class T>

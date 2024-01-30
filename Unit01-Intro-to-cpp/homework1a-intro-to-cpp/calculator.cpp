@@ -41,61 +41,38 @@ std::string input(std::string prompt) {
 int main(int argc, char const* argv[]) {
 
 
-
-
     string operation = input("operation: ");
     while (!operation.empty())
     {
-
-
-
-
-        if (operation == "add")
-        {
+        if (operation == "add" || operation == "subtract" || operation == "multiply" || operation == "divide" || operation == "mod") {
             int left = stoi(input("left operand: "));
             int right = stoi(input("right operand: "));
-            cout << left+right << endl;
-        }
 
-        else if (operation == "subtract")
-        {
-            int left = stoi(input("left operand: "));
-            int right = stoi(input("right operand: "));
-            cout << left-right << endl;
-        }
-
-        else if (operation == "multiply")
-        {
-            int left = stoi(input("left operand: "));
-            int right = stoi(input("right operand: "));
-            cout << left*right << endl;
-        }
-
-        else if (operation == "divide")
-        {
-            int left = stoi(input("left operand: "));
-            int right = stoi(input("right operand: "));
-            cout << left/right << endl;
-        }
-
-        else if (operation == "mod")
-        {
-            int left = stoi(input("left operand: "));
-            int right = stoi(input("right operand: "));
-            cout << left%right << endl;
+            if (operation == "add") {
+                cout << left + right << endl;
+            } else if (operation == "subtract") {
+                cout << left - right << endl;
+            } else if (operation == "multiply") {
+                cout << left * right << endl;
+            } else if (operation == "divide") {
+                cout << left / right << endl;
+            } else if (operation == "mod") {
+                cout << left % right << endl;
+            }
         }
 
         else
         {
+
             cout << operation << " isn't a valid operation" << endl;
         }
+
+
         operation = input("operation: ");
 
 
     }
             return 0;
-
-
 
     return 0;
 }

@@ -10,29 +10,24 @@ int main(int argc, char const* argv[]) {
     int b = atoi(argv[2]);
     int c = atoi(argv[3]);
 
+    
     if (a > b)
-
-
     {
         //subtract
-        a -= 1;
         while (a % c != 0)
         {
             a -= 1;
         }
         while (a >= b)
         {
-
             cout << a << endl;
             a -= c;
-
         }
     }
 
     else
     {
         //add
-
         while (a % c != 0)
         {
             a += 1;
@@ -43,7 +38,6 @@ int main(int argc, char const* argv[]) {
             a += c;
         }
     }
-
 
     return 0;
 }
