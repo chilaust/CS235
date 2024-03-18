@@ -10,7 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6f7798-088d-474d-8ffe-dfaa79dbb22b" name="Changes" comment="Finished 3b and 3c started on 3d having problems with medianOfThree">
-      <change beforePath="$PROJECT_DIR$/homework3d-quicksort/QS.h" beforeDir="false" afterPath="$PROJECT_DIR$/homework3d-quicksort/QS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3b-maze/maze" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/maze" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3b-maze/maze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/maze.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3b-maze/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze" beforeDir="false" afterPath="$PROJECT_DIR$/maze" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/DWARF/maze" beforeDir="false" afterPath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/DWARF/maze" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/Relocations/aarch64/maze.yml" beforeDir="false" afterPath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/Relocations/aarch64/maze.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit04-Mechanics-of-lists/homework4b-dllist/DLList.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit04-Mechanics-of-lists/homework4b-dllist/DLList.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +86,10 @@
       <workItem from="1700488630340" duration="5226000" />
       <workItem from="1700956275496" duration="3825000" />
       <workItem from="1701123629130" duration="778000" />
+      <workItem from="1707237209860" duration="42000" />
+      <workItem from="1710012396070" duration="10516000" />
+      <workItem from="1710625981905" duration="719000" />
+      <workItem from="1710799359118" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
