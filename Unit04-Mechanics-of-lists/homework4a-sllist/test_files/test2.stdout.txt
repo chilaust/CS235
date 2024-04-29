@@ -1,4 +1,4 @@
---- Test 2 output ---
+./--- Test 2 output ---
 
 list = 1 2 3 4 5
 

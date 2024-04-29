@@ -10,16 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6f7798-088d-474d-8ffe-dfaa79dbb22b" name="Changes" comment="Finished 3b and 3c started on 3d having problems with medianOfThree">
-      <change beforePath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit01-Intro-to-cpp/homework1c-references/head.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/Lab3/1Nephi-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/Lab3/homework2d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/Lab3/makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/homework_2d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/nested.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit02-STL-data-structures/lecture2d-maps/nested.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework3b-maze/maze" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/maze" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework3b-maze/maze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/maze.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework3b-maze/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/homework3b-maze/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze" beforeDir="false" afterPath="$PROJECT_DIR$/maze" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/DWARF/maze" beforeDir="false" afterPath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/DWARF/maze" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/Relocations/aarch64/maze.yml" beforeDir="false" afterPath="$PROJECT_DIR$/maze.dSYM/Contents/Resources/Relocations/aarch64/maze.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit04-Mechanics-of-lists/homework4b-dllist/DLList.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit04-Mechanics-of-lists/homework4b-dllist/DLList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3d-quicksort/QS.h" beforeDir="false" afterPath="$PROJECT_DIR$/homework3d-quicksort/QS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3d-quicksort/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/homework3d-quicksort/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +60,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="maze.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Unit03-Sorting" TARGET_NAME="maze.cpp" CONFIG_NAME="maze.cpp">
-      <option name="sourceFile" value="homework3b-maze/maze.cpp" />
+    <configuration name="Sort.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Unit03-Sorting" TARGET_NAME="Sort.cpp" CONFIG_NAME="Sort.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/homework3d-quicksort/Sort.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -90,6 +88,9 @@
       <workItem from="1710012396070" duration="10516000" />
       <workItem from="1710625981905" duration="719000" />
       <workItem from="1710799359118" duration="592000" />
+      <workItem from="1712798527870" duration="17142000" />
+      <workItem from="1713474902950" duration="606000" />
+      <workItem from="1713980521937" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -122,9 +123,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/homework3d-quicksort/QS.h</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/homework3d-quicksort/sort.cpp</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

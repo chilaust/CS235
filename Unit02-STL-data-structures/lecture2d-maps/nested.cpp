@@ -15,7 +15,7 @@ using std::set;
 int main()
 {
     // Get words
-    map<int, set<string>> words_of_length;
+    map<int, set<string> > words_of_length;
     string word;
     while (input("Word: ", word))
     {

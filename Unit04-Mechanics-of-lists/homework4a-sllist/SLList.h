@@ -2,62 +2,94 @@
 
 template <class T>
 class SLList {
-
-private:
-    Node* head;
 public:
     struct Node {
         Node* next;
         T value;
-        Node(T const &item) : value(item), next(nullptr) {}
-        //next - a pointer to the next Node in the list
-        //value - an object of the data type to store the value of the node
 
         Node(T v) : next(nullptr), value(v) {}
     };
+    size_t _size;
+    Node* head;
 
-    SLList() {}
-    //SLList() - a default constructor that initializes an empty list
+    SLList() : head(nullptr), _size(0){}
 
-    ~SLList() {}
-    //~SLList() - a destructor that clears the list
+    ~SLList() {
+        clear();
+    }
 
     const Node* get_head() const {
         return head;
-        //returns a pointer to the head node
+        // implement get_head here
     }
 
     void push_back(T item) {
-        Node* newNode = new Node(item);
-        if (head == nullptr) {
-            head = newNode;
+        if (head == nullptr){
+            head = new Node(item);
+            head->next = nullptr;
+            _size++;
         }
         else {
             Node* current = head;
-            while(current->next != nullptr) {
-                current = current->next
+            while (current->next != nullptr) {
+                current = current->next;
             }
-            current->next = newNode;
+            current->next = new Node(item);
+            current->next->next = nullptr;
+            _size++;
         }
-
-
-        // implement push_back here
-        //adds a new node with the given item to the end of the list
     }
 
     void pop_back() {
-        //  removes the last node in the list
+        if (_size == 0) {
+            throw std::length_error("No items in list");
+        }
+        if(head == nullptr) {
+            return;
+        }
+        if (head->next ==nullptr) {
+            delete head;
+            head = nullptr;
+            _size--;
+        }
+        else {
+            Node* current = head;
+            while (current->next->next != nullptr) {
+                current = current->next;
+            }
+            delete current->next;
+            current->next = nullptr;
+            _size--;
+        }
+
+
     }
 
     const T& front() const {
-        // returns a const reference to the value of the head node (assume list is not empty)
+        if (_size == 0) {
+            throw std::length_error("No items in list");
+        }
+        return head->value;
+        // implement front here
     }
 
     int size() const {
-        // returns the current size of the list (i.e., the number of elements/nodes)
+        return _size;
+        // implement size here
     }
 
     void clear() {
-        //  removes all nodes from the list
+        while (head != nullptr) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+            temp = nullptr;
+        }
+        delete head;
+        head = nullptr;
+        _size = 0;
+
     }
 };
+
+

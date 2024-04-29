@@ -1,4 +1,4 @@
---- Test 4 output ---
+./te--- Test 4 output ---
 
 vector.remove(0) threw an out_of_range exception
 vector.push_back(19)
