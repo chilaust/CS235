@@ -107,69 +107,76 @@ using std::cout, std::endl;
 template <class T>
 class SLList
 {
-    struct Node
-    {
+    public:
+    struct Node {
         T value;
-        Node *next;
-        Node(T const &item) : value(item), next(nullptr) {}
+        Node* next;
+        Node(T const& item) : value(item), next(nullptr) {}
     };
-
-    Node *head;
+private:
+    Node* _head;
     size_t _size;
 
-    void _push_back(Node *&node, T const &value)
-    {
-        if (node == nullptr)
-        {
-            node = new Node(value);
+    void _push_back(Node*& node, T const& item) {
+        if (node == nullptr) {
+            node = new Node(item);
             _size++;
-        }
-        else
-        {
-            _push_back(node->next, value);
+        } else {
+            _push_back(node->next, item);
         }
     }
 
-    void _clear(Node *&node)
-    {
-        if (node == nullptr)
-        {
-            return;
+    void _clear(Node*& node) {
+        if (node != nullptr) {
+            _clear(node->next);
+
+            delete node;
+            node = nullptr;
+            _size--;        
         }
-        _clear(node->next);
-        delete node;
-        node = nullptr;
-        _size--;
     }
 
 public:
-    SLList() : head(nullptr), _size(0) {}
-    ~SLList()
-    {
+    SLList() : _head(nullptr), _size(0) {}
+
+    ~SLList() {
         clear();
     }
 
     T first() const
     {
         /* don't call this unless you're sure there is a value here! */
-        return head->value;
+        return _head->value;
     }
 
-    size_t size() const { return _size; }
+    size_t size() const {
+        return _size;
+    }
 
     void push_back(T const &item)
     {
-        _push_back(head, item);
+        _push_back(_head, item);
     }
 
     void clear()
     {
-        _clear(head);
+        _clear(_head);
     }
 };
 
+void epic() {
+    SLList<long long> list;
+    for (int i = 0; i < 10; i++) {
+        list.push_back(i);
+    }
+}
+
 int main()
 {
+    for (int i = 0; i < 1000000000; i++) {
+        epic();
+    }
+
     SLList<int> list;
     cout << "Size should be 0: " << list.size() << endl;
     list.push_back(7);
