@@ -104,22 +104,29 @@ private:
 
         if (node->value == item) {
             Node * temp = node;
+            if (node->left == nullptr && node->right ==nullptr) {
+                delete node;
+                node = nullptr;
+                return true;
+            }
             if (node->left == nullptr) {
                 node = node->right;
+                delete temp;
+                return true;
             }
 
             else if (node->right == nullptr) {
                 node = node->left;
+                delete temp;
+                return true;
             }
 
             else {
                 Node* iop = find_iop(node->left);
                 node->value = iop->value;
-                remove_helper(node->left, iop->value);
+                return remove_helper(node->left, iop->value);
             }
 
-            delete temp;
-            return true;
         }
 
         else if (item < node->value) {
@@ -140,7 +147,7 @@ private:
         return node;
     }
 
-    bool contains_helper(const Node* node, T item) const {
+    bool contains_helper(Node* node, T item) const {
         if (node == nullptr)  {
             return false;
         }

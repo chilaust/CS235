@@ -10,8 +10,8 @@
 #include <unordered_set>
 #include "VectorSet.h"
 #include "BST.h"
-#include "AVL.h"
-#include "HashSet.h"
+
+
 
 int main(int argc, char* argv[]) {
     std::srand(std::time(nullptr));
