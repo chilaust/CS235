@@ -10,8 +10,8 @@
 #include <unordered_set>
 #include "VectorSet.h"
 #include "BST.h"
-
-
+#include "AVL.h"
+#include "HashSet.h"
 
 int main(int argc, char* argv[]) {
     std::srand(std::time(nullptr));
@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
     // below
     std::set<int> set;
     // std::unordered_set<int> set;
-    // VectorSet<int> set;
+     VectorSet<int> set;
     // BST<int> set;
     // AVL<int> set;
     // HashSet<int> set;
